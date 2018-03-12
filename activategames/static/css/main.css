@@ -1,0 +1,28 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.homemargin {
+    margin-top: 45px;
+}
+
+.homebody {
+    background-color: blue;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.homebuttons {
+   color: white;
+   text-align: center;
+   border-radius: 50%;
+}
+
+.center {
+   text-align: center
+}
+
+.JeapardyBackground {
+    background: linear-gradient(blue,rgb(128, 0, 128),yellow);
+    background-repeat: no-repeat;
+}
