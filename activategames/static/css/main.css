@@ -7,22 +7,23 @@ body {
 }
 
 .homebody {
-    background-color: blue;
+    background-color: rgba(170, 164, 148, 0.315);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center;   
 }
 
 .homebuttons {
    color: white;
    text-align: center;
-   border-radius: 50%;
+   border-radius: 50%; 
 }
 
 .center {
-   text-align: center
+   text-align: center 
 }
 
 .JeapardyBackground {
     background: linear-gradient(blue,rgb(128, 0, 128),yellow);
     background-repeat: no-repeat;
+    color: rgba(236, 233, 219, 0.582);
 }
