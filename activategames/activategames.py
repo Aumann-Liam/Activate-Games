@@ -7,5 +7,18 @@ app = Flask(__name__)
 def index():
     return render_template('HomePage.html')
 
+
+@app.route('/')
+@app.route('/Jeopardy')
+def jeopardy():
+    return render_template('Jeopardy.html')
+
+
+@app.route('/')
+@app.route('/FF')
+def fam_feud():
+    return render_template('FF.html')
+
+
 if __name__ == "__main__":
     app.run(debug=True)
