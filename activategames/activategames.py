@@ -48,11 +48,5 @@ def fam_feud():
     return render_template('FF.html')
 
 
-@app.route('/')
-@app.route('/answers')
-def answers():
-    return render_template('answer.html')
-
-
 if __name__ == "__main__":
     app.run(debug=True)
