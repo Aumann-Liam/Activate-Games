@@ -2,8 +2,9 @@ from flask import Flask, render_template, url_for
 
 app = Flask(__name__)
 
+categories = ['Category1', 'Category2', 'Category3', 'Category4', 'Category5', 'Category6']
 
-questions = {'Category1': {'Box1': ['Question1', 'Answer2'],
+questions = [{'Category1': {'Box1': ['Question1', 'Answer2'],
                            'Box2': ['Question2', 'Answer2'],
                            'Box3': ['Question3', 'Answer3'],
                            'Box4': ['Question4', 'Answer4'],
@@ -27,8 +28,13 @@ questions = {'Category1': {'Box1': ['Question1', 'Answer2'],
                            'Box2': ['Question2', 'Answer2'],
                            'Box3': ['Question3', 'Answer3'],
                            'Box4': ['Question4', 'Answer4'],
+                           'Box5': ['Question5', 'Answer5']},
+             'Category6': {'Box1': ['Question1', 'Answer2'],
+                           'Box2': ['Question2', 'Answer2'],
+                           'Box3': ['Question3', 'Answer3'],
+                           'Box4': ['Question4', 'Answer4'],
                            'Box5': ['Question5', 'Answer5']}
-             }
+             }]
 
 @app.route('/')
 @app.route('/HomePage')
