@@ -34,7 +34,7 @@ questions = {'Category1': {'Box1': ['Question1', 'Answer2'],
 @app.route('/HomePage')
 def index():
     return render_template('HomePage.html')
-
+  
 
 @app.route('/')
 @app.route('/Jeopardy')
@@ -46,6 +46,12 @@ def jeopardy():
 @app.route('/FF')
 def fam_feud():
     return render_template('FF.html')
+  
+  
+@app.route('/')
+@app.route('/answers')
+def answers():
+    return render_template('answer.html')
 
 
 if __name__ == "__main__":
