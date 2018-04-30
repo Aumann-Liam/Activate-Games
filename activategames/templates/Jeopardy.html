@@ -10,27 +10,17 @@
     <div class="container center">
         <h1>Jeopardy</h1>
         <div class="row">
-            <div class="col">
-                <h3 class="center">Prophets</h3>
-            </div>
-            <div class="col">
-                <h3 class="center">Places</h3>
-            </div>
-            <div class="col">
-                <h3 class="center">Animals</h3>
-            </div>
-            <div class="col">
-                <h3 class="center">Books</h3>
-            </div>
-            <div class="col">
-                <h3 class="center">Kings</h3>
-            </div>
-            <div class="col">
-                <h3 class="center">Revelation</h3>
-            </div>
+            {% for c in foo[0] %}
+                <div class="col">
+                    <h3 class="center">{{ c }}</h3>
+                </div>
+            {% endfor %}
         </div>
         <p>  </p>
         <div class="row">
+            <div class="col">
+                <a type="homebutton button" class="btn btn-info btn-block" href="{{ url_for('answers') }}">200</a>
+            </div>
             <div class="col">
                 <a type="homebutton button" class="btn btn-info btn-block" href="{{ url_for('answers') }}">200</a>
             </div>
@@ -64,28 +54,37 @@
             <div class="col">
                 <a type="homebutton button" class="btn btn-info btn-block" href="{{ url_for('answers') }}">400</a>
             </div>
-        </div>
-        <p>  </p>
-        <div class="row">
             <div class="col">
-                <a type="homebutton button" class="btn btn-info btn-block" href="{{ url_for('answers') }}">600</a>
-            </div>
-            <div class="col">
-                <a type="homebutton button" class="btn btn-info btn-block" href="{{ url_for('answers') }}">600</a>
-            </div>
-            <div class="col">
-                <a type="homebutton button" class="btn btn-info btn-block" href="{{ url_for('answers') }}">600</a>
-            </div>
-            <div class="col">
-                <a type="homebutton button" class="btn btn-info btn-block" href="{{ url_for('answers') }}">600</a>
-            </div>
-            <div class="col">
-                <a type="homebutton button" class="btn btn-info btn-block" href="{{ url_for('answers') }}">600</a>
+                <a type="homebutton button" class="btn btn-info btn-block" href="{{ url_for('answers') }}">400</a>
             </div>
         </div>
         <p>  </p>
         <div class="row">
             <div class="col">
+                <a type="homebutton button" class="btn btn-info btn-block" href="{{ url_for('answers') }}">600</a>
+            </div>
+            <div class="col">
+                <a type="homebutton button" class="btn btn-info btn-block" href="{{ url_for('answers') }}">600</a>
+            </div>
+            <div class="col">
+                <a type="homebutton button" class="btn btn-info btn-block" href="{{ url_for('answers') }}">600</a>
+            </div>
+            <div class="col">
+                <a type="homebutton button" class="btn btn-info btn-block" href="{{ url_for('answers') }}">600</a>
+            </div>
+            <div class="col">
+                <a type="homebutton button" class="btn btn-info btn-block" href="{{ url_for('answers') }}">600</a>
+            </div>
+            <div class="col">
+                <a type="homebutton button" class="btn btn-info btn-block" href="{{ url_for('answers') }}">600</a>
+            </div>
+        </div>
+        <p>  </p>
+        <div class="row">
+            <div class="col">
+                <a type="homebutton button" class="btn btn-info btn-block" href="{{ url_for('answers') }}">800</a>
+            </div>
+            <div class="col">
                 <a type="homebutton button" class="btn btn-info btn-block" href="{{ url_for('answers') }}">800</a>
             </div>
             <div class="col">
@@ -103,6 +102,9 @@
         </div>
         <p>  </p>
         <div class="row">
+            <div class="col">
+                <a type="homebutton button" class="btn btn-info btn-block" href="{{ url_for('answers') }}">1000</a>
+            </div>
             <div class="col">
                 <a type="homebutton button" class="btn btn-info btn-block" href="{{ url_for('answers') }}">1000</a>
             </div>
