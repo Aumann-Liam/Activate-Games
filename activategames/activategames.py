@@ -4,37 +4,36 @@ app = Flask(__name__)
 
 categories = ['Category1', 'Category2', 'Category3', 'Category4', 'Category5', 'Category6']
 
-questions = [{'Category1': {'Box1': ['Question1', 'Answer2'],
-                           'Box2': ['Question2', 'Answer2'],
-                           'Box3': ['Question3', 'Answer3'],
-                           'Box4': ['Question4', 'Answer4'],
-                           'Box5': ['Question5', 'Answer5']},
-             'Category2': {'Box1': ['Question1', 'Answer2'],
-                           'Box2': ['Question2', 'Answer2'],
-                           'Box3': ['Question3', 'Answer3'],
-                           'Box4': ['Question4', 'Answer4'],
-                           'Box5': ['Question5', 'Answer5']},
-             'Category3': {'Box1': ['Question1', 'Answer2'],
-                           'Box2': ['Question2', 'Answer2'],
-                           'Box3': ['Question3', 'Answer3'],
-                           'Box4': ['Question4', 'Answer4'],
-                           'Box5': ['Question5', 'Answer5']},
-             'Category4': {'Box1': ['Question1', 'Answer2'],
-                           'Box2': ['Question2', 'Answer2'],
-                           'Box3': ['Question3', 'Answer3'],
-                           'Box4': ['Question4', 'Answer4'],
-                           'Box5': ['Question5', 'Answer5']},
-             'Category5': {'Box1': ['Question1', 'Answer2'],
-                           'Box2': ['Question2', 'Answer2'],
-                           'Box3': ['Question3', 'Answer3'],
-                           'Box4': ['Question4', 'Answer4'],
-                           'Box5': ['Question5', 'Answer5']},
-             'Category6': {'Box1': ['Question1', 'Answer2'],
-                           'Box2': ['Question2', 'Answer2'],
-                           'Box3': ['Question3', 'Answer3'],
-                           'Box4': ['Question4', 'Answer4'],
-                           'Box5': ['Question5', 'Answer5']}
-             }]
+questions = [{'200': ['Question1', 'Answer2'],
+              '400': ['Question2', 'Answer2'],
+              '600': ['Question3', 'Answer3'],
+              '800': ['Question4', 'Answer4'],
+              '1000': ['Question5', 'Answer5']},
+             {'200': ['Question1', 'Answer2'],
+              '400': ['Question2', 'Answer2'],
+              '600': ['Question3', 'Answer3'],
+              '800': ['Question4', 'Answer4'],
+              '1000': ['Question5', 'Answer5']},
+             {'200': ['Question1', 'Answer2'],
+              '400': ['Question2', 'Answer2'],
+              '600': ['Question3', 'Answer3'],
+              '800': ['Question4', 'Answer4'],
+              '1000': ['Question5', 'Answer5']},
+             {'200': ['Question1', 'Answer2'],
+              '400': ['Question2', 'Answer2'],
+              '600': ['Question3', 'Answer3'],
+              '800': ['Question4', 'Answer4'],
+              '1000': ['Question5', 'Answer5']},
+             {'200': ['Question1', 'Answer2'],
+              '400': ['Question2', 'Answer2'],
+              '600': ['Question3', 'Answer3'],
+              '800': ['Question4', 'Answer4'],
+              '1000': ['Question5', 'Answer5']},
+             {'200': ['Question1', 'Answer2'],
+              '400': ['Question2', 'Answer2'],
+              '600': ['Question3', 'Answer3'],
+              '800': ['Question4', 'Answer4'],
+              '1000': ['Question5', 'Answer5']}]
 
 @app.route('/')
 @app.route('/HomePage')
@@ -45,7 +44,7 @@ def index():
 @app.route('/')
 @app.route('/Jeopardy')
 def jeopardy():
-    return render_template('Jeopardy.html')
+    return render_template('Jeopardy.html', foo=(categories, questions))
 
 
 @app.route('/')
